@@ -34,7 +34,7 @@ The application is available through the URL http://surfaces-crxmarkets.herokuap
 
     https://surfaces-crxmarkets.herokuapp.com/surfaces/volumes?configuration=3,1,1,3,4,1,1,4
     https://surfaces-crxmarkets.herokuapp.com/surfaces/volumes?configuration=9,8,7,6,5,4,3,2,1
-    https://surfaces-crxmarkets.herokuapp.com/surfaces/volumes?configuration=3,2,4,1,2?
+    https://surfaces-crxmarkets.herokuapp.com/surfaces/volumes?configuration=3,2,4,1,2
     https://surfaces-crxmarkets.herokuapp.com/surfaces/volumes?configuration=4,1,1,0,2,3
 
 # How to Run The Project
