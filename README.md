@@ -68,4 +68,3 @@ To generate an image docker of the generated jar was added a maven plugin called
 at the end of the process the image should be available in the local docker repository, to run this image through docker you should run the command: 
 
     docker run --name surfaces -p 8080:8080 surfaces:1.0
-    
