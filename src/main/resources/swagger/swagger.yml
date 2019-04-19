@@ -1,0 +1,47 @@
+swagger: "2.0"
+info:
+  description: "
+This system will calculate the volume of water that remained on the surface after the rain"
+  version: "1.0"
+  title: "Surfaces"
+host: "127.0.0.1:8080"
+schemes:
+  - "http"
+paths:
+  /surfaces/volumes:
+    get:
+      summary: "This end point will return the volume from surface"
+      description: "Teste"
+      produces:
+        - "application/json"
+      parameters:
+        - name: "configuration"
+          in: "query"
+          description: "The configuration of surface to calculated volume"
+          required: true
+          type: "array"
+          items:
+            type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Volume"
+        400:
+          description: "bad request"
+          schema:
+            $ref: "#/definitions/Exception"
+definitions:
+  Volume:
+    type: "object"
+    properties:
+      volume:
+        type: "integer"
+        format: "int32"
+  Exception:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+      message:
+        type: "string"

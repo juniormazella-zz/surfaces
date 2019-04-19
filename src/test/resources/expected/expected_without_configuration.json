@@ -1,0 +1,4 @@
+{
+  "code": 400,
+  "message": "Required Integer[] parameter 'configuration' is not present"
+}

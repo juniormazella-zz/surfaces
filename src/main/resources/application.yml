@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: surfaces
+  security:
+    allowedOrigin: https://editor.swagger.io,http://localhost:4200
+    allowMethods: GET

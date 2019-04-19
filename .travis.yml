@@ -1,0 +1,15 @@
+language: java
+cache:
+  directories:
+    - .autoconf
+    - $HOME/.m2
+sudo: false
+script:
+    mvn clean package -U
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+deploy:
+  provider: heroku
+  api_key:
+    secure: MOeVh54J9VIZ8+dV5FXazSbDkEGq2KWJFrTgrnnU5TU6TTshBqTma3aAHDZPqE+jHwIMddJbCNmh7qjKz4+vkgelQvJobn+d+tDBB0YSiVNFwulDWoutr0faKiksnP/9z44x7zFwXd9tNPva9UhiCVR18bPzPOpY7EzTxl3fHLgJo4Jeh5roe/fb20lVIkp0b6yrhtV+SWa0tWpJsHrJGnw+tTg49XRNHKyJhk2ElnkJpML2rBiMJlzSBHzFRk+t/zJJNaBe9X5saNKiA0qKQkok7RZOn6YSRN/UBi9Mn/DUJp+kWqxXOSJ1RTAyA66Q27E+l86x7H47V0NgLArxn/t3eGYLowucU/rj+XOEZRYclnDXeEp4ZS/o0mn15/UpaHhxb9PMUtxoCqcIH4Dc/AcQ9R/boc4jy9esaeCUGYwljsirjiddOdppBxhi59ZWN5T+CgHZYThXgL65/tQhhnn3HLFJzqGxaATxP+SjoikmqQiLUh2URqFsS26SXZMEV/A+hTvsgeWx0jYEFd7p1sPijT7XKwea7hIr8nJsur5FtV41RUqH1qf2wFKpJepd7IYpL4Qg/2kbdahV4njvAPXH+S/Cb+4N5VvFpLw/hhKJ8cCzgTjS7y0ZExGOUeEETZ3C6q+a9O42sGezTluAtkyJ2ZXMonPKaaXwfFDwyDo=
+  app: surfaces-crxmarkets

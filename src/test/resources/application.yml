@@ -1,0 +1,4 @@
+spring:
+  security:
+    allowedOrigin: https://editor.swagger.io,http://localhost:4200
+    allowMethods: GET

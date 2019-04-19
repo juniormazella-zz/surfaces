@@ -1,0 +1,4 @@
+{
+  "code": 400,
+  "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer[]'; nested exception is java.lang.NumberFormatException: For input string: \"3.12,2.12,4.32\""
+}
